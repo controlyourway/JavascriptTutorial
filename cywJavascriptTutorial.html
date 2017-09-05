@@ -2,7 +2,7 @@
 <head>
     <title>Cyw Javascript Tutorial</title>
     <script type="text/javascript" src="http://www.controlyourway.com/Scripts/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="http://www.controlyourway.com/Scripts/ControlYourWay-1.1-min.js"></script>
+    <script type="text/javascript" src="http://www.controlyourway.com/Scripts/ControlYourWay-1.0-min.js"></script>
     <script type="text/javascript">
         //user javascript
         var cyw;  //this will reference the Control Your Way library
@@ -108,8 +108,7 @@
                     }
                 }
             } else {
-                //there was an error, get the error message
-                messages += "Connection error: " + cyw.ConvertErrorCodeToString(error) + "\n";
+                messages += "Connection failed\n";
             }
             $('#textAreaMessages').val(messages);
         }
